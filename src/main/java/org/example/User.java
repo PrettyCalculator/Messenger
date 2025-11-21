@@ -1,20 +1,27 @@
+package org.example;
 
-    public class User {
+import java.io.File;
+
+public class User {
         public User() {
 
+        }
+        public User(String phoneNumber, String userName){
+            this.userName = userName;
+            this.phoneNumber = phoneNumber;
         }
 
         private String phoneNumber;
         private String userName;
         private File image = new File("skibidi.png");
 
-        public setNumber(String phoneNumber) {
+        public void setNumber(String phoneNumber) {
             this.phoneNumber = phoneNumber;
         }
-        public setImage(File image) {
+        public void setImage(File image) {
             this.image = image;
         }
-        public setUsername(String userName) {
+        public void setUsername(String userName) {
             this.userName = userName;
         }
 
@@ -28,5 +35,5 @@
             return userName;
         }
 
-    }
 }
+
